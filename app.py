@@ -106,6 +106,17 @@ def main():
             margin: 0;
             text-align: center;
         }
+        [data-testid="stSidebar"] div[role="radiogroup"] > label:nth-child(2) {
+            border-color: #3B82F6 !important;
+            background: linear-gradient(to right, #EFF6FF, #FFFFFF) !important;
+            border-width: 2px !important;
+        }
+        [data-testid="stSidebar"] div[role="radiogroup"] > label:nth-child(2) p::after {
+            content: " ✨ NEW";
+            font-size: 10px;
+            color: #1E40AF;
+            vertical-align: super;
+        }
         </style>
         """,
         unsafe_allow_html=True
@@ -187,6 +198,15 @@ def _render_home_page():
         "to predict default probability based on applicant profiles, classifying them into "
         "Low, Medium, and High risk categories."
     )
+    
+    st.markdown("""
+    <div style="background: linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%); padding: 1.5rem; border-radius: 12px; color: white; margin: 1rem 0;">
+        <h3 style="color: white; margin-top: 0;">✨ New: AI Lending Agent Support</h3>
+        <p style="color: #BFDBFE; margin-bottom: 1rem;">Move beyond raw probability to <b>Agentic Reasoning</b>. Our new AI Agent interprets ML scores alongside RBI & Basel III regulations to provide human-style lending assessments.</p>
+        <p style="font-size: 0.9rem; font-weight: 600;">Go to "AI Lending Agent" in the sidebar to try it now!</p>
+    </div>
+    """, unsafe_allow_html=True)
+    
     st.markdown("---")
     st.subheader("Model Comparison Summary")
 
