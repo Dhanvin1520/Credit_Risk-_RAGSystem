@@ -2,9 +2,9 @@
 
 > An end-to-end AI system that evolves from predictive analytics (Milestone 1) to autonomous agentic decision support (Milestone 2).
 
-**Live App:** [https://genaicapstone-m8ezlrzqqq8ctmmfgsh6ur.streamlit.app](https://genaicapstone-m8ezlrzqqq8ctmmfgsh6ur.streamlit.app/)
+**Live App:** [https://credit-risk-system6.streamlit.app/](https://credit-risk-system6.streamlit.app/)
 
-**GitHub Repository:** [https://github.com/Dhanvin1520/Credit_Risk-_RAGSystem](https://github.com/Dhanvin1520/Credit_Risk-_RAGSystem)
+**GitHub Repository:** [https://github.com/Dhanvin1520/Credit_Risk_RAGSystem/](https://github.com/Dhanvin1520/Credit_Risk_RAGSystem/)
 
 ---
 
