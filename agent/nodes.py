@@ -218,7 +218,8 @@ def llm_assessment_node(state: AgentState) -> AgentState:
         "1. Base ALL risk decisions ONLY on objective financial metrics.\n"
         "2. NEVER consider or mention gender, religion, caste, ethnicity, or any protected attribute.\n"
         "3. Cite ONLY sources explicitly given in the regulatory context below.\n"
-        "4. Return ONLY valid JSON with no markdown fences or extra text.\n\n"
+        "4. Return ONLY valid JSON with no markdown fences or extra text.\n"
+        "5. Use the Indian Rupee symbol (₹) for all currency mentions in the report.\n\n"
         'Return this exact JSON structure:\n'
         '{\n'
         '  "borrower_summary": "Summary of financial profile",\n'
