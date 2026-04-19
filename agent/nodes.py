@@ -234,7 +234,7 @@ def llm_assessment_node(state: AgentState) -> AgentState:
 
     user_message = (
         f"BORROWER FINANCIAL PROFILE:\n"
-        f"- Income: ${profile['income']:,} | Loan: ${profile['loan_amount']:,}\n"
+        f"- Income: ₹{profile['income']:,} | Loan: ₹{profile['loan_amount']:,}\n"
         f"- Credit Score: {profile['credit_score']} | Experience: {profile['employment_years']}y\n"
         f"- Credit History: {profile['credit_history_years']}y | Previous Defaults: {profile['previous_defaults']}\n\n"
         f"ML ASSESSMENT:\n"

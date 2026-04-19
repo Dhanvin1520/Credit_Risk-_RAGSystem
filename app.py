@@ -331,13 +331,13 @@ def _render_ml_prediction_page():
             with col_a:
                 age = st.number_input("Age", min_value=18, max_value=100, value=30)
                 gender = st.selectbox("Gender", ["male", "female"])
-                income = st.number_input("Annual Income ($)", min_value=0, value=60000, step=1000)
+                income = st.number_input("Annual Income (₹)", min_value=0, value=60000, step=1000)
                 emp_len = st.number_input("Employment Experience (Years)", min_value=0, max_value=50, value=5)
                 education = st.selectbox("Education Level", ['High School', 'Associate', 'Bachelor', 'Master', 'Doctorate'])
                 home_ownership = st.selectbox("Home Ownership", df['person_home_ownership'].unique())
 
             with col_b:
-                loan_amnt = st.number_input("Loan Amount ($)", min_value=100, value=10000, step=500)
+                loan_amnt = st.number_input("Loan Amount (₹)", min_value=100, value=10000, step=500)
                 loan_intent = st.selectbox("Loan Intent", df['loan_intent'].unique())
                 loan_int_rate = st.number_input("Interest Rate (%)", min_value=0.0, max_value=30.0, value=10.0, step=0.1)
                 cred_hist_length = st.number_input("Credit History Length (Years)", min_value=0, max_value=50, value=5)
@@ -543,7 +543,7 @@ def _render_agent_page():
 
         with col2:
             st.markdown("**Financial Details**")
-            income = st.number_input("Annual Income ($)", min_value=0, value=75000, step=1000, key="ag_income")
+            income = st.number_input("Annual Income (₹)", min_value=0, value=75000, step=1000, key="ag_income")
             employment_years = st.number_input(
                 "Employment Experience (Years)", min_value=0, max_value=50, value=8, key="ag_emp"
             )
@@ -554,7 +554,7 @@ def _render_agent_page():
 
         with col3:
             st.markdown("**Loan Details**")
-            loan_amount = st.number_input("Loan Amount ($)", min_value=100, value=15000, step=500, key="ag_la")
+            loan_amount = st.number_input("Loan Amount (₹)", min_value=100, value=15000, step=500, key="ag_la")
             loan_intent = st.selectbox("Loan Purpose", df['loan_intent'].unique(), key="ag_li")
             interest_rate = st.number_input(
                 "Interest Rate (%)", min_value=0.0, max_value=30.0, value=11.5, step=0.1, key="ag_ir"

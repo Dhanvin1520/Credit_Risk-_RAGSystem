@@ -116,7 +116,7 @@ We used the Loan Approval Classification dataset from Kaggle \cite{kaggle_datase
     person\_age             & Numerical   & Age of the applicant \\
     person\_gender          & Categorical & Gender (male/female) \\
     person\_education       & Categorical & Education level (High School, Associate, Bachelor, Master, Doctorate) \\
-    person\_income          & Numerical   & Annual income (\$) \\
+    person\_income          & Numerical   & Annual income (₹) \\
     person\_emp\_exp        & Numerical   & Employment experience (years) \\
     person\_home\_ownership & Categorical & Home ownership (RENT, OWN, MORTGAGE, OTHER) \\
     loan\_amnt              & Numerical   & Loan amount requested \\
@@ -294,7 +294,7 @@ All models were evaluated on the \textbf{test set} (20\% unseen data) using accu
 To evaluate the agent's reasoning capability (Milestone 2), we analyzed its output across distinct borrower profiles. The following case studies demonstrate how the agent synthesizes the ML scores above with regulatory grounding.
 
 \subsubsection{Case Study A: The 'Safe' but Regulatory Check Profile}
-\textbf{Input:} High income (\$120k), Excellent credit score (780).
+\textbf{Input:} High income (₹120k), Excellent credit score (780).
 \begin{quote}
 \textit{Agent Rationale:} ``The borrower demonstrates exceptional financial resilience. However, per Basel III liquidity norms, we cross-referenced the interest coverage ratio.''
 \end{quote}
